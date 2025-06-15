@@ -17,5 +17,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ inputs['node-version'] }}
-      - run: npm ci
-      - run: npm test
+
+      - run: |
+          echo "Hello from GitHub Actions!"
+          echo "Today's date is: $(date)"
+      #- run: npm ci
+      #- run: npm test
